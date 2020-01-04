@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB"
+    tools:context=".ChatActivity">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="#2F2F2F"
+        android:gravity="left|center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_weight="1"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:text="执酒高歌语"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView-add"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_weight="5"
+            android:src="@drawable/more" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dip"
+        android:layout_marginTop="50dip"
+        android:divider="@null"
+        app:layout_constraintBottom_toTopOf="@id/bottom"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top">
+
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="#ffffff"
+        android:gravity="left|center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+
+        <ImageView
+            android:id="@+id/yuyin"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_marginLeft="10dip"
+            app:srcCompat="@drawable/yuyin" />
+
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip" />
+
+        <ImageView
+            android:id="@+id/biaoqing"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_marginLeft="5dip"
+            app:srcCompat="@drawable/biaoqing" />
+
+        <Button
+            android:id="@+id/sub"
+            android:layout_width="60dip"
+            android:layout_height="30dip"
+            android:layout_marginLeft="10dip"
+            android:background="#3CB034"
+            android:text="发 送"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
